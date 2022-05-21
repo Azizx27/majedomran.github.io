@@ -202,7 +202,7 @@
 
             try
             {
-                var req = axios.get('http://127.0.0.1:5000/questions'
+                var req = axios.get('http://3.135.202.190:5000/questions'
 
                 ).then((data) =>
                 {
@@ -235,7 +235,7 @@
                             const token = localStorage['token']
                             buttondlt.onclick = () =>
                             {
-                                axios.patch(`http://127.0.0.1:5000/question/${token}`, {
+                                axios.patch(`http://3.135.202.190:5000/question/${token}`, {
                                     "id": ques.id
                                 }).then((data) => {
                                     console.log('------data: ', data);

@@ -42,7 +42,7 @@
 
       const token = localStorage["token"]
 
-      var req = axios.post(`http://127.0.0.1:5000/score/${token}`,
+      var req = axios.post(`http://3.135.202.190:5000/score/${token}`,
         {
           score: total,
           date: new Date()
@@ -84,7 +84,7 @@
 
     try
     {
-      var req = axios.get('http://127.0.0.1:5000/questions'
+      var req = axios.get('http://3.135.202.190:5000/questions'
 
       ).then((data) =>
       {

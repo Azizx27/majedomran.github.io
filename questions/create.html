@@ -179,7 +179,7 @@
                 const answerCorrect = document.querySelector('input[name="correct"]:checked').value;
                 console.log('------answerCorrect: ', answerCorrect);
                 const token = localStorage['token']
-                var req = axios.post(`http://127.0.0.1:5000/question/${token}`,
+                var req = axios.post(`http://3.135.202.190:5000/question/${token}`,
                     {
                         question,
                         picture_path: image,
